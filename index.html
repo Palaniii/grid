@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Article</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color:#f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "menu main right"
+                "footer footer footer";
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr 2fr 1fr;
+            min-height: 100vh;
+        }
+
+        header, footer, nav, article {
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color:white;
+        }
+
+        header {
+            grid-area: header;
+            text-align: center;
+            font-size: 24px;
+	    background-color:black;
+	    text-color:white;
+        
+        }
+
+        nav {
+            grid-area: menu;
+        }
+
+        main {
+            grid-area: main;
+            padding: 20px;
+        }
+
+        aside {
+            grid-area: right;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+           <h5 style="color:white;"> Nature Wonders</h5>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h2>Exploring the Beauty of Nature</h2>
+                <p> Many beautiful living things are among the countless riches of beauty that nature has to offer. Millions of different species in every size, colour, and habitat—on land, in the sky, and in the water—abound in the world of birds, animals, reptiles, and fish. They are present all the time and everywhere</p>
+                <!-- Add more content as needed -->
+            </article>
+        </main>
+        <aside>
+            <h3>Featured Articles</h3>
+            <ul>
+                <li><a href="#">The Enchanting Forests</a></li>
+                <li><a href="#">Bird Watching Tips</a></li>
+                <li><a href="#">Mountain Adventures</a></li>
+            </ul>
+        </aside>
+        <footer>
+           <h1>Our Mission</h1>
+<p>We at Nature Explorers India are on a mission to create millions of smiles and memories for nature & wildlife lovers across the world by serving them the world class nature & wildlife tour packages</p>.
+<h1>Email</h1>
+<p> <a href="#">NatureExploaring@gmail.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
